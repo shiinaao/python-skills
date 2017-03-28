@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+  * [Python 阅读列表](python-yue-du-lie-biao.md)
 * [常见陷阱](chapter1.md)
 * [dict.setdefault\(\)](dictsetdefault.md)
 * [单例模式\(5种\)](dan-li-mo-shi.md)
