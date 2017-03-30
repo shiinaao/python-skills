@@ -12,4 +12,5 @@
   * [装饰器@staticmethod和@classmethod](zhuang-shi-5668-staticmethod-548c-classmethod.md)
   * [dict.setdefault\(\)](dictsetdefault.md)
   * [广度继承](guang-du-ji-cheng.md)
+  * [if else 缩进不同的写法](if-else-suo-jin-bu-tong-de-xie-fa.md)
 
