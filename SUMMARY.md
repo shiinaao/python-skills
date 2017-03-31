@@ -7,10 +7,12 @@
   * [迟绑定闭包](chapter1/chi-bang-ding-bi-bao.md)
   * [unpacking 陷阱\(a, b = b, a\)](chapter1/unpacking-xian-963128-a-b-b-a.md)
   * [关于\_\_slots\_\_需要注意的问题](guan-yu-slots-xu-yao-zhu-yi-de-wen-ti.md)
-* 不常见技巧
+* [不常见技巧](bu-chang-jian-ji-qiao.md)
   * [单例模式\(5种\)](dan-li-mo-shi.md)
   * [装饰器@staticmethod和@classmethod](zhuang-shi-5668-staticmethod-548c-classmethod.md)
-  * [dict.setdefault\(\)](dictsetdefault.md)
   * [广度继承](guang-du-ji-cheng.md)
   * [if else 缩进不同的写法](if-else-suo-jin-bu-tong-de-xie-fa.md)
+* [常见技巧](chang-jian-ji-qiao.md)
+  * [dict.setdefault\(\)](dictsetdefault.md)
+  * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehensiontui-dao-5f0f29.md)
 
