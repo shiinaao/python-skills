@@ -14,5 +14,5 @@
   * [if else 缩进不同的写法](if-else-suo-jin-bu-tong-de-xie-fa.md)
 * [常见技巧](chang-jian-ji-qiao.md)
   * [dict.setdefault\(\)](dictsetdefault.md)
-  * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehensiontui-dao-5f0f29.md)
+  * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehension.md)
 
