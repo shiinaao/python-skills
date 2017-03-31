@@ -1,4 +1,4 @@
-# Python skills
+# Python Skills
 
-总结实用的和不实用的 Python 技巧,
+总结~~实用的和~~不实用的 Python 技巧,
 
