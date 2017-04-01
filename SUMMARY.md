@@ -16,4 +16,5 @@
 * [常见技巧](chang-jian-ji-qiao.md)
   * [dict.setdefault\(\)](dictsetdefault.md)
   * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehension.md)
+  * [列表去重](lie-biao-qu-zhong.md)
 
