@@ -17,4 +17,5 @@
   * [dict.setdefault\(\)](dictsetdefault.md)
   * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehension.md)
   * [列表去重](lie-biao-qu-zhong.md)
+  * [字典合并和排序](zi-dian-he-bing.md)
 
