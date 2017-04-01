@@ -1,23 +1,26 @@
 # 推导式\(快\)
 
-总有人和我说可以一个`for` 或者一个`if` 解决问题, 那为什么要用`推导式` 呢?  
+总有人和我说可以一个`for` 或者一个`if` 解决问题, 那为什么要用`推导式` 呢?
 
-不只是因为写成一行显得比较酷, 更重要的是**快**
+不只是因为写成一行显得比较酷, 更重要的是**快, **下面的例子展示的是**碾平列表的正确方式**
 
 ```
+li = [[1,2,3], [4,5], [6,7,8]]
+
 def ff():
-    li = []
-    for i in range(10000):
-        li.append(i)
-        
+    res = []
+    for i in li:
+        for j in i:
+            res.append(j)
+    return res
 
 %timeit ff()
-# The slowest run took 5.21 times longer than the fastest. This could mean that an intermediate result is being cached.
-# 1000 loops, best of 3: 817 µs per loop
+# The slowest run took 4.12 times longer than the fastest. This could mean that an intermediate result is being cached.
+# 1000000 loops, best of 3: 1.1 µs per loop
 
-%timeit [i for i in range(10000)]
-# The slowest run took 4.48 times longer than the fastest. This could mean that an intermediate result is being cached.
-# 1000 loops, best of 3: 340 µs per loop
+%timeit [j for i in li for j in i]
+# The slowest run took 10.77 times longer than the fastest. This could mean that an intermediate result is being cached.
+# 1000000 loops, best of 3: 648 ns per loop
 ```
 
 ## list - 列表推导式 =&gt; \[\]

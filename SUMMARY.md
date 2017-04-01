@@ -12,6 +12,7 @@
   * [装饰器@staticmethod和@classmethod](zhuang-shi-5668-staticmethod-548c-classmethod.md)
   * [广度继承](guang-du-ji-cheng.md)
   * [if else 缩进不同的写法](if-else-suo-jin-bu-tong-de-xie-fa.md)
+  * [碾平列表的N种方法](nian-ping-lie-biao-de-n-zhong-fang-fa.md)
 * [常见技巧](chang-jian-ji-qiao.md)
   * [dict.setdefault\(\)](dictsetdefault.md)
   * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehension.md)
