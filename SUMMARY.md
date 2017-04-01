@@ -13,9 +13,10 @@
   * [广度继承](guang-du-ji-cheng.md)
   * [if else 缩进不同的写法](if-else-suo-jin-bu-tong-de-xie-fa.md)
   * [碾平列表的N种方法](nian-ping-lie-biao-de-n-zhong-fang-fa.md)
+  * [花式操作矩阵](hua-shi-cao-zuo-ju-zhen.md)
 * [常见技巧](chang-jian-ji-qiao.md)
   * [dict.setdefault\(\)](dictsetdefault.md)
   * [推导式\(Comprehension\)](chang-jian-ji-qiao/comprehension.md)
-  * [列表去重](lie-biao-qu-zhong.md)
+  * [列表操作](lie-biao-qu-zhong.md)
   * [字典合并和排序](zi-dian-he-bing.md)
 

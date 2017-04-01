@@ -1,3 +1,5 @@
+# 列表去重
+
 ## 用集合
 
 ```
@@ -30,6 +32,7 @@ li = ['b','c','d','b','c','a','a']
 
 l2 = list(set(li))
 l2.sort(key=li.index)
+
 print(l2)
 # ['b', 'c', 'd', 'a']
 ```
@@ -38,12 +41,29 @@ print(l2)
 
 ```
 li = ['b','c','d','b','c','a','a']
+
 l2 =[]
 [l2.append(i+'+') for i in li if i+'+' not in l2]
 # Out[36]: [None, None, None, None]
+
 print(l2)
 # ['b+', 'c+', 'd+', 'a+']
 ```
 
 一行完成了 去重, 保持顺序 和 处理, 有点太极端了, 分开写又不是不能用
+
+# 列表排序
+
+## 两种规则同时排序\(@laike9m\)
+
+```
+lst = [1, -2, 10, -12, -4, -5, 9, 2]
+
+lst.sort(key=lambda x: (x < 0, abs(x)))
+
+print(lst)
+# [1, 2, 9, 10, -2, -4, -5, -12]
+```
+
+
 
