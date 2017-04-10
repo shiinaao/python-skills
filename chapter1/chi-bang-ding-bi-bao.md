@@ -1,4 +1,4 @@
-## 迟绑定闭包
+## 迟绑定闭包 - [原文地址](http://pythonguidecn.readthedocs.io/zh/latest/writing/gotchas.html#id8)
 
 另一个常见的困惑是Python在闭包\(或在周围全局作用域（surrounding global scope）\)中 绑定变量的方式。
 

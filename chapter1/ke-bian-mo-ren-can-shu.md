@@ -1,4 +1,4 @@
-## 可变默认参数
+## 可变默认参数 - [原文地址](http://pythonguidecn.readthedocs.io/zh/latest/writing/gotchas.html#default-args)
 
 看起来，最 让Python程序员感到惊奇的是Python对函数定义中可变默认参数的处理。
 
