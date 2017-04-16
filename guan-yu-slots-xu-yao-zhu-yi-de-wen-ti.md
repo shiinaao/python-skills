@@ -73,6 +73,32 @@ Traceback (most recent call last):
 AttributeError: 'A' object has no attribute '__dict__'
 ```
 
+在`__slots__`中添加`__weakref__`
+
+```
+from weakref import ref
+
+
+class Base(object):
+    __slots__ = ['vk', '__weakref__']
+
+    def __init__(self):
+        self.vk = 'vk1'
+
+
+b = Base()
+
+print('dir(b): ', dir(b))
+print(ref(b))
+```
+
+Out: 
+
+```
+dir(b):  ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'vk']
+<weakref at 0x0000000002BA1CC8; to 'Base' at 0x0000000002B65F98>
+```
+
 
 
 
