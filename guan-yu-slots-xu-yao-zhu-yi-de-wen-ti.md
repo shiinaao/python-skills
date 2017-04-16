@@ -26,7 +26,7 @@ class A(Base):
         super().__init__()
         self.name = name
         self.age = age
-        
+
 
 a = A('job', 22)
 
@@ -34,7 +34,7 @@ print('dir(a): ', dir(a))
 print('a.__dict__: ', a.__dict__)
 ```
 
-Out: 只在子类上定义`__slots__`, 实例中存在`__weakref__`方法, 并且创建的实例依然可以访问 __dict__ 属性
+Out: 只在子类上定义`__slots__`, 实例中存在`__weakref__`方法, 并且创建的实例依然可以访问 **dict** 属性
 
 ```
 dir(a):  ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'age', 'name', 'vk']
@@ -55,7 +55,7 @@ class A(Base):
         super().__init__()
         self.name = name
         self.age = age
-        
+
 
 a = A('job', 22)
 
@@ -92,14 +92,12 @@ print('dir(b): ', dir(b))
 print(ref(b))
 ```
 
-Out: 
+Out:
 
 ```
 dir(b):  ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'vk']
 <weakref at 0x0000000002BA1CC8; to 'Base' at 0x0000000002B65F98>
 ```
-
-
 
 
 
