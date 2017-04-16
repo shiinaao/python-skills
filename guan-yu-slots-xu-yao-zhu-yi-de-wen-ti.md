@@ -30,14 +30,18 @@ class A(Base):
 
 a = A('job', 22)
 
-# 只在子类上定义 __slots__, 创建的实例依然可以访问 __dict__ 属性
-a.__dict__
-Out[16]: {'vk': 'vk1'}
-
-
+print('dir(a): ', dir(a))
+print('a.__dict__: ', a.__dict__)
 ```
 
-父类也定义 \_\_slots\_\_ 属性后
+Out: 只在子类上定义`__slots__`, 实例中存在`__weakref__`方法, 并且创建的实例依然可以访问 __dict__ 属性
+
+```
+dir(a):  ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'age', 'name', 'vk']
+a.__dict__:  {'vk': 'vk1'}
+```
+
+父类也定义`__slots__`属性后
 
 ```
 class Base(object):
@@ -55,16 +59,19 @@ class A(Base):
 
 a = A('job', 22)
 
-a.__dict__
----------------------------------------------------------------------------
-AttributeError                            Traceback (most recent call last)
-<ipython-input-22-87da7e691200> in <module>()
-----> 1 a.__dict__
-
-AttributeError: 'A' object has no attribute '__dict__'
+print('dir(a): ', dir(a))
+print('a.__dict__: ', a.__dict__)
 ```
 
+Out: 实例中不存在`__weakref__`方法和`__dict__`方法
 
+```
+dir(a):  ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', 'age', 'name', 'vk']
+Traceback (most recent call last):
+  File "E:/project/demo/test/class3.py", line 20, in <module>
+    print('a.__dict__: ', a.__dict__)
+AttributeError: 'A' object has no attribute '__dict__'
+```
 
 
 
