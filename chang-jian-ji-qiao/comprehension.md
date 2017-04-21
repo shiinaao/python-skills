@@ -30,6 +30,19 @@ def ff():
 # Out[3]: [0, 1, 4, 9, 16]
 ```
 
+举个高级点的例子, 查找某目录及其子目录下所有`.md`后缀的文件
+
+```
+import os
+
+li = [os.path.join(root, file)
+        for root, dirs, files in os.walk('D:\\Users\\Administrator\\Desktop\\test')
+        for file in files if file.endswith('.md')]
+
+print(li)
+# ['D:\\Users\\Administrator\\Desktop\\test\\1.md', 'D:\\Users\\Administrator\\Desktop\\test\\e\\a\\2.md']
+```
+
 ## dict - 字典推导式 =&gt; {}
 
 ```
