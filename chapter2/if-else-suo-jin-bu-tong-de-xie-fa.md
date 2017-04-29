@@ -1,4 +1,5 @@
 万万没想到, 在 Python 这门缩进严格的语言中, if else 这一对儿竟然有缩进不统一的写法
+> **ps**: Effective Python 中第12条解释, `else`可以写在`for`和`while`语句后面, 但是不推荐这样做
 
 这段代码是在 V2EX 上看到的
 
