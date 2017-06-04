@@ -1,3 +1,5 @@
+# dict.setdefault()
+
 python 中 dict 的 setdefault\(\) 方法, 可以给字典添加一条内容
 
 ```
@@ -26,5 +28,17 @@ print(da)
 {'name': 'homer', 'status': 'run', 'age': 20}
 ```
 
+效率上的考虑
 
+```
+if key not in my_dict:
+	my_dict[key] = []
+my_dict[key].append(new_value)
+
+# =================================
+
+my_dict.setdefault(key, []).append(new_value)
+```
+
+使用`setdefault()`只需要一次键查询就可以完成操作, 手动判断的话就需要3次键查询
 
