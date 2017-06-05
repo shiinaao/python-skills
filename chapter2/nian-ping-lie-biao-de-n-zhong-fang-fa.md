@@ -10,24 +10,24 @@ li = [[1,2,3], [4,5], [6,7,8]]
 ## itertools
 
 ```
-li = [[1,2,3], [4,5], [6,7,8]]
+In [6]: li = [[1,2,3], [4,5], [6,7,8]]
 
-import itertools
+In [7]: import itertools
 
-list(itertools.chain.from_iterable(li))
-# Out[13]: [1, 2, 3, 4, 5, 6, 7, 8]
+In [8]: list(itertools.chain.from_iterable(li))
+Out[8]: [1, 2, 3, 4, 5, 6, 7, 8]
 
-list(itertools.chain(*li))
-# Out[38]: [1, 2, 3, 4, 5, 6, 7, 8]
+In [9]: list(itertools.chain(*li))
+Out[9]: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
 ## sum\(这个还是太魔幻了\)
 
 ```
-li = [[1,2,3], [4,5], [6,7,8]]
+In [10]: li = [[1,2,3], [4,5], [6,7,8]]
 
-sum(li, [])
-Out[15]: [1, 2, 3, 4, 5, 6, 7, 8]
+In [11]: sum(li, [])
+Out[11]: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
 ## 复杂嵌套列表

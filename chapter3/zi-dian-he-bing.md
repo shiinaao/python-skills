@@ -30,21 +30,24 @@ py3.6 版本之后的 dict 实现是有序的, 在这之前的版本需要有序
 ## 使用 lambda
 
 ```
-da = {1: 2, 3: 4, 4:3, 2:1, 0:0}
-sorted(da.items(), key=lambda x: x[1])
-# Out[10]: [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+In [1]: da = {1: 2, 3: 4, 4:3, 2:1, 0:0}
 
-from collections import OrderedDict
-OrderedDict((sorted(da.items(), key=lambda x: x[1])))
-# Out[16]: OrderedDict([(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)])
+In [2]: sorted(da.items(), key=lambda x: x[1])
+Out[2]: [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+
+In [3]: from collections import OrderedDict
+
+In [4]: OrderedDict((sorted(da.items(), key=lambda x: x[1])))
+Out[4]: OrderedDict([(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)])
 ```
 
 ## 毫无存在感的方法二
 
 ```
-import operator
-sorted(x.items(), key=operator.itemgetter(1))
-# Out[17]: [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
+In [5]: import operator
+
+In [6]: sorted(x.items(), key=operator.itemgetter(1))
+Out[6]: [(0, 0), (2, 1), (1, 2), (4, 3), (3, 4)]
 ```
 
 
