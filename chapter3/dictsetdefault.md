@@ -13,19 +13,19 @@ def setdefault(self, k, d=None): # real signature unknown; restored from __doc__
 若k 在字典中存在, 不论其value 的值是不是None 都不进行操作**setdefault\(\)方法可以用于保护字典中的数据**
 
 ```
-da = {'name':'homer', 'age':20}
+In [1]: da = {'name':'homer', 'age':20}
 
-da.setdefault('age', -1)
-Out[5]: 20
+In [2]: da.setdefault('age', -1)
+Out[2]: 20
 
-print(da)
+In [3]: print(da)
 {'name': 'homer', 'age': 20}
 
-da.setdefault('status', 'run')
-Out[8]: 'run'
+In [4]: da.setdefault('status', 'run')
+Out[4]: 'run'
 
-print(da)
-{'name': 'homer', 'status': 'run', 'age': 20}
+In [5]: print(da)
+{'name': 'homer', 'age': 20, 'status': 'run'}
 ```
 
 效率上的考虑

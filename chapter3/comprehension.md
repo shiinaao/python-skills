@@ -5,29 +5,28 @@
 不只是因为写成一行显得比较酷, 还有一个原因是**快**, 下面的例子展示的是**碾平列表的正确方式**
 
 ```
-li = [[1,2,3], [4,5], [6,7,8]]
+In [11]: li = [[1,2,3], [4,5], [6,7,8]]
 
-def ff():
-    res = []
-    for i in li:
-        for j in i:
-            res.append(j)
-    return res
+In [12]: def ff():
+    ...:     res = []
+    ...:     for i in li:
+    ...:         for j in i:
+    ...:             res.append(j)
+    ...:     return res
+    ...: 
 
-%timeit ff()
-# The slowest run took 4.12 times longer than the fastest. This could mean that an intermediate result is being cached.
-# 1000000 loops, best of 3: 1.1 µs per loop
+In [13]: %timeit ff()
+1.38 µs ± 1.61 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 
-%timeit [j for i in li for j in i]
-# The slowest run took 10.77 times longer than the fastest. This could mean that an intermediate result is being cached.
-# 1000000 loops, best of 3: 648 ns per loop
+In [14]: %timeit [j for i in li for j in i]
+833 ns ± 1.36 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 ```
 
 ## list - 列表推导式 =&gt; \[\]
 
 ```
-[i**2 for i in range(5)]
-# Out[3]: [0, 1, 4, 9, 16]
+In [15]: [i**2 for i in range(5)]
+Out[15]: [0, 1, 4, 9, 16]
 ```
 
 举个高级点的例子, 查找某目录及其子目录下所有`.md`后缀的文件
@@ -46,25 +45,25 @@ print(li)
 ## dict - 字典推导式 =&gt; {}
 
 ```
-{i: i**2 for i in range(5)}
-# Out[11]: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+In [6]: {i: i**2 for i in range(5)}
+Out[6]: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 ```
 
 ## set - 集合推导式\(这个真的不是括号\) =&gt; {}
 
 ```
-{i**2 for i in [1,2,3,1,2,3]}
-# Out[9]: {1, 4, 9}
+In [7]: {i**2 for i in [1,2,3,1,2,3]}
+Out[7]: {1, 4, 9}
 ```
 
 ## generator - 生成器推导式 =&gt; \(\)
 
 ```
-(i**2 for i in [1,2,3,1,2,3])
-# Out[12]: <generator object <genexpr> at 0x0000000004F54830>
+In [9]: (i**2 for i in [1,2,3,1,2,3])
+Out[9]: <generator object <genexpr> at 0x00000000050EA468>
 
-list((i**2 for i in [1,2,3,1,2,3]))
-# Out[13]: [1, 4, 9, 1, 4, 9]
+In [10]: list((i**2 for i in [1,2,3,1,2,3]))
+Out[10]: [1, 4, 9, 1, 4, 9]
 ```
 
 
