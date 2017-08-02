@@ -22,6 +22,8 @@ In [14]: %timeit [j for i in li for j in i]
 833 ns ± 1.36 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 ```
 
+原因应该是推导式没有`.append()` 省去了`getattr` 的时间
+
 ## list - 列表推导式 =&gt; \[\]
 
 ```
