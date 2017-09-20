@@ -14,6 +14,7 @@
   * [if else 缩进不同的写法](chapter2/if-else-suo-jin-bu-tong-de-xie-fa.md)
   * [碾平列表的N种方法](chapter2/nian-ping-lie-biao-de-n-zhong-fang-fa.md)
   * [花式操作矩阵](chapter2/hua-shi-cao-zuo-ju-zhen.md)
+  * [强制转换到指定变量的类型](chapter2/qiang-zhi-zhuan-huan-dao-zhi-ding-bian-liang-de-lei-xing.md)
 * [常见技巧](chapter3/chang-jian-ji-qiao.md)
   * [dict.setdefault\(\)](chapter3/dictsetdefault.md)
   * [推导式\(Comprehension\)](chapter3/comprehension.md)
