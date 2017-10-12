@@ -11,7 +11,7 @@
   * [单例模式\(5种\)](chapter2/dan-li-mo-shi.md)
   * [装饰器@staticmethod和@classmethod](chapter2/zhuang-shi-5668-staticmethod-548c-classmethod.md)
   * [广度继承](chapter2/guang-du-ji-cheng.md)
-  * [if else 缩进不同的写法](chapter2/if-else-suo-jin-bu-tong-de-xie-fa.md)
+  * [for/else](chapter2/for-else.md)
   * [碾平列表的N种方法](chapter2/nian-ping-lie-biao-de-n-zhong-fang-fa.md)
   * [花式操作矩阵](chapter2/hua-shi-cao-zuo-ju-zhen.md)
   * [强制转换到指定变量的类型](chapter2/qiang-zhi-zhuan-huan-dao-zhi-ding-bian-liang-de-lei-xing.md)
