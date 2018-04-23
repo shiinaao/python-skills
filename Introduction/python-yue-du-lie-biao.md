@@ -4,7 +4,7 @@
 4. **Stack Overflow关于Python的高分回答** [Gitbook](https://taizilongxu.gitbooks.io/stackoverflow-about-python/)
 5. **关于Python的面试题** [Github](https://github.com/taizilongxu/interview_python)
 6. **一些算法的Python 实现** [Github](https://github.com/qiwsir/algorithm/blob/master/README.md)
-7. **Gevent 指南** [~~中文~~](http://xlambda.com/gevent-tutorial/) - [英文](http://sdiehl.github.io/gevent-tutorial/)
+7. **Gevent 指南** [中文](http://hhkbp2.github.io/gevent-tutorial/) - [英文](http://sdiehl.github.io/gevent-tutorial/)
 8. **Effective Python: 编写高质量Python代码的59个有效方法** [Amazon](https://book.douban.com/subject/26709315/)
 9. **Python见闻志** [Gitbook](https://www.gitbook.com/book/harveyqing/python-read-and-write/details)
 10. **使用Python解决算法与数据结构问题 zh** [中文](https://facert.gitbooks.io/python-data-structure-cn/) 
