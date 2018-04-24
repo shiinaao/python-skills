@@ -20,6 +20,7 @@
   * [推导式\(Comprehension\)](chapter3/comprehension.md)
   * [列表操作](chapter3/lie-biao-qu-zhong.md)
   * [字典合并和排序](chapter3/zi-dian-he-bing.md)
+  * [进制转换](chapter3/jin-zhi-zhuan-huan.md)
 * [不常见的坑](chapter4/bu-chang-jian-de-keng.md)
   * [Win Python3.5 PyCrypto 安装](chapter4/win-python35-pycrypto-an-zhuang.md)
 
