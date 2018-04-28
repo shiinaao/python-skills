@@ -21,7 +21,7 @@ class Base(object):
         self.vk = 'vk1'
 
 class A(Base):
-    __slots__ = ['name', 'age']
+    __slots__ = ('name', 'age')
     def __init__(self, name, age):
         super().__init__()
         self.name = name
@@ -40,17 +40,18 @@ Out: 只在子类上定义`__slots__`, 实例中存在`__weakref__`方法, 并�
 dir(a):  ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'age', 'name', 'vk']
 a.__dict__:  {'vk': 'vk1'}
 ```
+> 注意: `__slots__` 属性的值虽然可以是一个列表，但是最好始终使用元组，因为处理完类的定义体之后再修改 `__slots__` 列表没有任何作用，所以使用可变的序列容易让人误解。  ----Fluent Python 19.6.1
 
 父类也定义`__slots__`属性后
 
 ```
 class Base(object):
-    __slots__ = ['vk']
+    __slots__ = ('vk')
     def __init__(self):
         self.vk = 'vk1'
 
 class A(Base):
-    __slots__ = ['name', 'age']
+    __slots__ = ('name', 'age')
     def __init__(self, name, age):
         super().__init__()
         self.name = name
@@ -80,7 +81,7 @@ from weakref import ref
 
 
 class Base(object):
-    __slots__ = ['vk', '__weakref__']
+    __slots__ = ('vk', '__weakref__')
 
     def __init__(self):
         self.vk = 'vk1'
