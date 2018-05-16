@@ -1,5 +1,7 @@
 ## Python unpacking 陷阱
 
+来源: [Python在unpacking上的一个小陷阱](https://zhuanlan.zhihu.com/p/25436739)
+
 在Python 中, 交换两个变量的值是非常方便的, 只需要使用unpacking\(解包\)
 
 ```
@@ -54,5 +56,5 @@ j, m[j] = m[j], 99
 
 > Python将右侧先整体求值并缓存结果，然后遍历左侧进行绑定
 
-参考: [Python在unpacking上的一个小陷阱](https://zhuanlan.zhihu.com/p/25436739)
+
 
