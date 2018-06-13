@@ -1,4 +1,4 @@
-Python 中创建大量的类实例时, 使用`__slots__`节省内存的使用
+Python 中创建大量的类实例时，使用`__slots__`节省内存的使用
 
 Python Cookbook 也稍微提到了一点 [8.4 创建大量对象时节省内存方法](http://python3-cookbook.readthedocs.io/zh_CN/latest/c08/p04_save_memory_when_create_large_number_instances.html)
 
@@ -13,7 +13,7 @@ Python Cookbook 也稍微提到了一点 [8.4 创建大量对象时节省内存�
 
 关于`descriptor`详细内容参考: [python中基于descriptor的一些概念（上）](http://www.cnblogs.com/btchenguang/archive/2012/09/17/2689146.html#WizKMOutline_1347874388282794)
 
-## Example
+### Example
 
 ```
 class Base(object):
@@ -40,6 +40,7 @@ Out: 只在子类上定义`__slots__`, 实例中存在`__weakref__`方法, 并�
 dir(a):  ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', 'age', 'name', 'vk']
 a.__dict__:  {'vk': 'vk1'}
 ```
+
 > 注意: `__slots__` 属性的值虽然可以是一个列表，但是最好始终使用元组，因为处理完类的定义体之后再修改 `__slots__` 列表没有任何作用，所以使用可变的序列容易让人误解。  ----Fluent Python 19.6.1
 
 父类也定义`__slots__`属性后
@@ -100,5 +101,18 @@ dir(b):  ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format_
 <weakref at 0x0000000002BA1CC8; to 'Base' at 0x0000000002B65F98>
 ```
 
+## 声明不存在于\`\_\_slots\_\_\`中的类属性
 
+在阅读`Flask`源码时看到的写法：[flask.json.tag](https://github.com/pallets/flask/blob/b34c7174e75db5ab43ff3d76a1c7027126e8c9b3/flask/json/tag.py#L56)
+
+    class JSONTag(object):
+        """Base class for defining type tags for :class:`TaggedJSONSerializer`."""
+
+        __slots__ = ('serializer',)
+
+        #: The tag to mark the serialized object with. If ``None``, this tag is
+        #: only used as an intermediate step during tagging.
+        key = None
+
+效果是`JSONTag` 实例的`key` 会变成**只读属性**
 
