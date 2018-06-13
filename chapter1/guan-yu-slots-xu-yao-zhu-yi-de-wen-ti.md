@@ -114,5 +114,5 @@ dir(b):  ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format_
         #: only used as an intermediate step during tagging.
         key = None
 
-效果是`JSONTag` 实例的`key` 会变成**只读属性**
+效果是`JSONTag` 实例的`key` 会变成**只读属性**，只能在子类中继承然后修改此属性
 
