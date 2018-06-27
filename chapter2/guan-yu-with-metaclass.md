@@ -4,5 +4,5 @@
 
 写了点帮助理解的测试代码, 保存在了 Gist 上
 
-&lt;script src="https://gist.github.com/shiinaao/cc694204bfed9b9c8cc6df0fc9f21911.js"&gt;&lt;/script&gt;
+<script src="https://gist.github.com/shiinaao/cc694204bfed9b9c8cc6df0fc9f21911.js"></script>
 
